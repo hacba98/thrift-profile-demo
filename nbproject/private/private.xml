@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/Profile.thrift</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/Server.cpp</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/gen-cpp/UserProfile_server.skeleton.cpp</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/Makefile</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/main.cpp</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/Server.h</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/gen-cpp/Profile_types.h</file>
+            <file>file:/home/cpu10855/Projects/Thrift-Tut/ProfileDemo/gen-cpp/UserProfile.h</file>
+        </group>
+    </open-files>
+</project-private>
