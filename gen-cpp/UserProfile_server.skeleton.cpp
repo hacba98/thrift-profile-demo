@@ -12,6 +12,8 @@ using namespace ::apache::thrift::protocol;
 using namespace ::apache::thrift::transport;
 using namespace ::apache::thrift::server;
 
+using boost::shared_ptr;
+
 class UserProfileHandler : virtual public UserProfileIf {
  public:
   UserProfileHandler() {
@@ -40,16 +42,16 @@ class UserProfileHandler : virtual public UserProfileIf {
 
 };
 
-//int main(int argc, char **argv) {
-//  int port = 9090;
-//  ::apache::thrift::stdcxx::shared_ptr<UserProfileHandler> handler(new UserProfileHandler());
-//  ::apache::thrift::stdcxx::shared_ptr<TProcessor> processor(new UserProfileProcessor(handler));
-//  ::apache::thrift::stdcxx::shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
-//  ::apache::thrift::stdcxx::shared_ptr<TTransportFactory> transportFactory(new TBufferedTransportFactory());
-//  ::apache::thrift::stdcxx::shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
-//
-//  TSimpleServer server(processor, serverTransport, transportFactory, protocolFactory);
-//  server.serve();
-//  return 0;
-//}
+int main2(int argc, char **argv) {
+  int port = 9090;
+  shared_ptr<UserProfileHandler> handler(new UserProfileHandler());
+  shared_ptr<TProcessor> processor(new UserProfileProcessor(handler));
+  shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
+  shared_ptr<TTransportFactory> transportFactory(new TBufferedTransportFactory());
+  shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
+
+  TSimpleServer server(processor, serverTransport, transportFactory, protocolFactory);
+  server.serve();
+  return 0;
+}
 
